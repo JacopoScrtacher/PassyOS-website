@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+        body {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-image: url('https://images.pexels.com/photos/4765691/pexels-photo-4765691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        }
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+        footer{
+         text-align: center;
+         padding: 3px;
+         background-color: rgba(68, 62, 62, 0.705);
+         color: white;
+         border-radius: 5px;
+         box-shadow: 5px 1px 1px 5px rgba(255, 255, 255, 0);
+        }
+        article {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+        
+        .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 10,
+        'wght' 400,
+        'GRAD' 10,
+        'opsz' 8
+        }
+
+        dialog {
+            border-radius: 5px;
+            border: white;
+            background-color: rgba(124, 114, 114, 0.705);
+        }
+
+
+        .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 4,
+        'GRAD' 2,
+        'opsz' 8
+        }
+
+        button {
+            border-radius: 12px;
+            border: rgba(15, 1, 1, 0.233);
+            padding: 10px;
+            background-color: rgba(68, 62, 62, 0.705);
+        }
+        .Rect {
+            background-color: black;
+            padding: 100px;
+        }
+    </style>
+    </head>
+    <body>
+      <dialog open ><button id="Button"> </button> &nbsp;&nbsp;<button id="Project"></button> &nbsp;&nbsp;<button id="Settings"></button></dialog>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="Rect">
+      </div>
+      <dialog style="right: 130px" open><article>Hi this is my website of myself! </article></dialog>
+      <br>
+      <br>
+      <dialog id="Dialog"><button id="Close"></button></dialog>
+      <br>
+    <footer>
+        <span class="material-symbols-outlined">
+            grade
+            </span>
+            <hr>
+        <h1> The footer </h1>
+    </footer>
+    <script>
+        document.getElementById("Project").innerHTML = "Projects";
+        document.getElementById("Button").innerHTML = "Home";
+        document.getElementById("Close").innerHTML = "Close";
+        document.getElementById("Settings").innerHTML = "Settings";
+        document.getElementById("Button").addEventListener("click", function() {
+            document.getElementById("Dialog").show();
+         });
+         document.getElementById("Close").addEventListener("click", function() {
+            document.getElementById("Dialog").close();
+         });
+    </script>
+</body>
+</html>
